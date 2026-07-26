@@ -1,0 +1,58 @@
+total papers: 11610
+by origin: {'core': 8456, 'ring': 3154}
+
+year histogram:
+  2001: # 1
+  2004: # 3
+  2005: # 13
+  2006: # 17
+  2007: ## 24
+  2008: ## 21
+  2009: ## 27
+  2010: ## 39
+  2011: ## 34
+  2012: ### 53
+  2013: #### 67
+  2014: ### 58
+  2015: #### 64
+  2016: ##### 81
+  2017: ###### 106
+  2018: ######### 164
+  2019: ############# 250
+  2020: ################### 364
+  2021: ##################### 409
+  2022: ########################## 509
+  2023: ######################################### 810
+  2024: ############################################################ 1946
+  2025: ############################################################ 3461
+  2026: ############################################################ 3089
+
+pre-cutoff (<=2022): 2304   post-cutoff (>=2023): 9306
+papers with missing/short abstract: 0
+
+papers per query (overlapping):
+    1669  all:"quantization" AND all:"LLM"
+    1613  all:"KV cache"
+    1560  all:"quantization" AND all:"large language model"
+    1338  all:"pruning" AND all:"large language model"
+    1280  all:"low-rank" AND all:"large language model"
+    1006  all:"knowledge distillation" AND all:"language model"
+     925  all:"mixture of experts" AND all:"inference"
+     790  all:"rate-distortion" AND cat:cs.IT
+     632  all:"speculative decoding"
+     608  all:"compressed sensing" AND cat:cs.LG
+     522  all:"vector quantization" AND cat:cs.LG
+     441  all:"accuracy degradation" AND cat:cs.LG
+     298  all:"outlier" AND all:"activation" AND cat:cs.LG
+     287  all:"pruning" AND all:"transformer" AND cat:cs.CL
+     285  all:"efficient attention"
+     281  all:"quantization" AND all:"transformer" AND cat:cs.CL
+     278  all:"memory bandwidth" AND cat:cs.AR
+     255  all:"network compression" AND cat:cs.LG
+     238  all:"efficient inference" AND all:"transformer"
+     204  all:"gradient compression"
+      97  all:"sparse matrix" AND all:"neural network"
+      95  all:"early exit" AND all:"transformer"
+      28  all:"dithered quantization"
+
+papers with S2 citation data: 11533 (7506 with >=1 edge)
