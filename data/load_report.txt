@@ -1,0 +1,43 @@
+papers: 11610
+entities: 64939  (type_conflict: 2343)
+MENTIONS edges: 164075
+CITES edges (within corpus): 39997
+
+entities by type:
+   32713  Method
+   13999  Phenomenon
+    6740  Task
+    4687  Metric
+    2749  Dataset
+    2057  ModelFamily
+    1994  Resource
+
+relation edges:
+   45899  APPLIES_TO
+   19522  IMPROVES
+    2811  DEGRADES
+    9537  REDUCES
+    8042  CAUSES
+   12422  MITIGATES
+    7465  FAILS_AT
+    9015  EXTENDS
+   20734  COMBINES_WITH
+    3049  APPROXIMATES
+  138496  TOTAL
+
+top 15 entities by total degree (sanity check — hub concepts should dominate):
+   12084  Metric       accuracy
+   11737  ModelFamily  llm
+    7253  Metric       inference_speed
+    4379  Method       quantization
+    4082  Resource     memory
+    3699  Method       low_rank_adaptation
+    3608  Method       kv_cache
+    3482  Method       knowledge_distillation
+    2875  Method       mixture_of_experts
+    2743  Method       pruning
+    2445  ModelFamily  transformer
+    2300  Method       compression
+    1936  Metric       model_size
+    1806  Method       rate_distortion_theory
+    1672  Method       speculative_decoding

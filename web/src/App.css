@@ -1,0 +1,239 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topbar {
+  padding: 20px 28px;
+  background: var(--surface-1);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar h1 {
+  margin: 0 0 2px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.topbar .subtitle {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 28px;
+  padding: 16px 28px;
+  background: var(--surface-1);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.stat-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 90px;
+}
+
+.stat-tile .value {
+  font-size: 22px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-tile .label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.list-pane {
+  width: 420px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  background: var(--surface-2);
+}
+
+.detail-pane {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 28px;
+}
+
+.candidate-row {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--gridline);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.candidate-row:hover {
+  background: var(--surface-card);
+}
+
+.candidate-row.selected {
+  background: var(--surface-card);
+  border-left: 3px solid var(--series-1);
+  padding-left: 17px;
+}
+
+.candidate-row .rank {
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  margin-right: 6px;
+}
+
+.candidate-row .pair {
+  font-weight: 500;
+}
+
+.candidate-row .meta-line {
+  margin-top: 4px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge.fails-at {
+  background: color-mix(in srgb, var(--series-2) 18%, transparent);
+  color: var(--series-2);
+}
+
+.badge.cross-origin {
+  background: color-mix(in srgb, var(--series-1) 18%, transparent);
+  color: var(--series-1);
+}
+
+.badge.confirm {
+  background: color-mix(in srgb, var(--status-good) 18%, transparent);
+  color: var(--status-good);
+}
+
+.badge.reject {
+  background: color-mix(in srgb, var(--status-critical) 18%, transparent);
+  color: var(--status-critical);
+}
+
+.score {
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+}
+
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.detail-header h2 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.detail-header .subtitle {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin: 0 0 16px;
+}
+
+.graph-card {
+  height: 420px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface-card);
+  margin-bottom: 20px;
+}
+
+.verification-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+  background: var(--surface-card);
+  margin-bottom: 16px;
+}
+
+.verification-card h3 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.verification-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 6px 0;
+  font-size: 13px;
+  border-top: 1px solid var(--gridline);
+}
+
+.verification-row:first-of-type {
+  border-top: none;
+}
+
+.verification-row .method-name {
+  width: 100px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.chart-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+  background: var(--surface-card);
+}
+
+.chart-card h3 {
+  margin: 0 0 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}

@@ -1,0 +1,1102 @@
+{
+  "system": [
+    {
+      "rank": 1,
+      "a": "causal_rate_distortion_function",
+      "c": "nonanticipative_rate_distortion_function",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 2,
+      "a": "deep_neural_network",
+      "c": "transformer",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2411.13757"
+        ],
+        "bridge_citation": [
+          "2306.05785",
+          "2306.07629",
+          "2312.03038",
+          "2312.05821",
+          "2401.00365"
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "a": "knowledge_distillation",
+      "c": "mixed_precision_quantization",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2606.04238"
+        ],
+        "bridge_citation": [
+          "2306.07629",
+          "2307.05972",
+          "2312.03038",
+          "2501.15014",
+          "2503.06862"
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "a": "knowledge_distillation",
+      "c": "super_resolution",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2503.06790"
+        ],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 5,
+      "a": "image_compression",
+      "c": "natural_images",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 6,
+      "a": "compressed_sensing",
+      "c": "vector_quantizer",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2509.04805"
+        ],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 7,
+      "a": "deep_learning",
+      "c": "knowledge_distillation",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2503.18958"
+        ],
+        "bridge_citation": [
+          "2407.04939",
+          "2411.01431"
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "a": "attention_head_pruning",
+      "c": "gradient_compression",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 9,
+      "a": "compressed_sensing",
+      "c": "knowledge_distillation",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.05785"
+        ]
+      }
+    },
+    {
+      "rank": 10,
+      "a": "attention_head_pruning",
+      "c": "mixture_of_experts",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.07629",
+          "2307.07982",
+          "2402.09748",
+          "2404.05567",
+          "2410.11842"
+        ]
+      }
+    },
+    {
+      "rank": 11,
+      "a": "efficient_attention",
+      "c": "rnn",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2305.13048"
+        ],
+        "bridge_citation": [
+          "2307.07982"
+        ]
+      }
+    },
+    {
+      "rank": 12,
+      "a": "deep_neural_network",
+      "c": "dnn",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2305.12201",
+          "2305.17295",
+          "2306.07629",
+          "2312.03038",
+          "2409.02404"
+        ]
+      }
+    },
+    {
+      "rank": 13,
+      "a": "deep_generative_model",
+      "c": "generative_model",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 14,
+      "a": "autoencoder",
+      "c": "mixture_of_experts",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2501.00530",
+          "2603.06473"
+        ],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 15,
+      "a": "dimension_reduction",
+      "c": "dimensionality_reduction",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 16,
+      "a": "multi_head_attention",
+      "c": "quantization",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2410.10819",
+          "2502.14837",
+          "2604.11501"
+        ],
+        "bridge_citation": [
+          "2305.12458",
+          "2305.14380",
+          "2306.00014",
+          "2306.02379",
+          "2306.07629"
+        ]
+      }
+    },
+    {
+      "rank": 17,
+      "a": "attention_head_pruning",
+      "c": "quantization",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2305.11627",
+          "2305.12458",
+          "2305.14380",
+          "2305.15805",
+          "2306.00014"
+        ]
+      }
+    },
+    {
+      "rank": 18,
+      "a": "deep_generative_prior",
+      "c": "generative_prior",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2310.03758",
+          "2511.12471",
+          "2603.07357"
+        ]
+      }
+    },
+    {
+      "rank": 19,
+      "a": "language_modelling",
+      "c": "neural_network",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2305.19268",
+          "2306.00978",
+          "2306.12929",
+          "2307.00331",
+          "2311.16442"
+        ]
+      }
+    },
+    {
+      "rank": 20,
+      "a": "active_learning",
+      "c": "compressed_sensing",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2605.05435"
+        ],
+        "bridge_citation": []
+      }
+    }
+  ],
+  "adamic_adar": [
+    {
+      "rank": 1,
+      "a": "causal_rate_distortion_function",
+      "c": "nonanticipative_rate_distortion_function",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 2,
+      "a": "knowledge_distillation",
+      "c": "mixed_precision_quantization",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2606.04238"
+        ],
+        "bridge_citation": [
+          "2306.07629",
+          "2307.05972",
+          "2312.03038",
+          "2501.15014",
+          "2503.06862"
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "a": "image_compression",
+      "c": "natural_images",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 4,
+      "a": "compressed_sensing",
+      "c": "vector_quantizer",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2509.04805"
+        ],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 5,
+      "a": "deep_neural_network",
+      "c": "transformer",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2411.13757"
+        ],
+        "bridge_citation": [
+          "2306.05785",
+          "2306.07629",
+          "2312.03038",
+          "2312.05821",
+          "2401.00365"
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "a": "deep_neural_network",
+      "c": "dnn",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2305.12201",
+          "2305.17295",
+          "2306.07629",
+          "2312.03038",
+          "2409.02404"
+        ]
+      }
+    },
+    {
+      "rank": 7,
+      "a": "dimension_reduction",
+      "c": "dimensionality_reduction",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 8,
+      "a": "deep_generative_prior",
+      "c": "generative_prior",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2310.03758",
+          "2511.12471",
+          "2603.07357"
+        ]
+      }
+    },
+    {
+      "rank": 9,
+      "a": "active_learning",
+      "c": "compressed_sensing",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2605.05435"
+        ],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 10,
+      "a": "dnn",
+      "c": "neural_network",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.00317",
+          "2306.08125",
+          "2306.12929",
+          "2312.03038",
+          "2312.07950"
+        ]
+      }
+    },
+    {
+      "rank": 11,
+      "a": "lossy_compression",
+      "c": "nonanticipative_rate_distortion_function",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 12,
+      "a": "pruning",
+      "c": "vector_quantizer",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2303.01505",
+          "2307.14988",
+          "2503.16980",
+          "2504.14569",
+          "2506.01863"
+        ],
+        "bridge_citation": [
+          "2303.13635",
+          "2306.01108",
+          "2306.07629",
+          "2307.02628",
+          "2402.03030"
+        ]
+      }
+    },
+    {
+      "rank": 13,
+      "a": "lossy_compression",
+      "c": "vq_vae",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2409.11184",
+          "2607.11919"
+        ],
+        "bridge_citation": [
+          "2404.04947"
+        ]
+      }
+    },
+    {
+      "rank": 14,
+      "a": "plm",
+      "c": "pretrained_language_model",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.06625",
+          "2306.06629",
+          "2401.15347",
+          "2408.08144",
+          "2508.17250"
+        ]
+      }
+    },
+    {
+      "rank": 15,
+      "a": "active_learning",
+      "c": "cnn",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 16,
+      "a": "rate_distortion_theory",
+      "c": "vq_vae",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2303.04743",
+          "2305.08842",
+          "2306.02305",
+          "2309.15505",
+          "2310.03004"
+        ]
+      }
+    },
+    {
+      "rank": 17,
+      "a": "source_coding",
+      "c": "wyner_ziv_problem",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 18,
+      "a": "attention_head_pruning",
+      "c": "mixture_of_experts",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.07629",
+          "2307.07982",
+          "2402.09748",
+          "2404.05567",
+          "2410.11842"
+        ]
+      }
+    },
+    {
+      "rank": 19,
+      "a": "deep_generative_model",
+      "c": "generative_model",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 20,
+      "a": "autoencoder",
+      "c": "mixture_of_experts",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2501.00530",
+          "2603.06473"
+        ],
+        "bridge_citation": []
+      }
+    }
+  ],
+  "random": [
+    {
+      "rank": 1,
+      "a": "backpropagation",
+      "c": "differential_privacy",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 2,
+      "a": "resource_constrained_device",
+      "c": "transformer",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2402.09748",
+          "2408.09632",
+          "2411.09816",
+          "2501.03273",
+          "2505.03803"
+        ],
+        "bridge_citation": [
+          "2305.17888",
+          "2306.00014",
+          "2306.00317",
+          "2306.01076",
+          "2306.01841"
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "a": "computational_cost",
+      "c": "sample_complexity",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2502.12762"
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "a": "entropy_coding",
+      "c": "lossy_source_coding",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2501.14053"
+        ],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 5,
+      "a": "communication_bottleneck",
+      "c": "generalization_bound",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 6,
+      "a": "projected_gradient_descent",
+      "c": "regularization",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 7,
+      "a": "inverse_problems",
+      "c": "posterior_sampling",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.03284",
+          "2310.03758",
+          "2511.12471",
+          "2603.07357"
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "a": "compression",
+      "c": "lasso",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2509.15060"
+        ],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 9,
+      "a": "channel_capacity",
+      "c": "uniform_quantization",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 10,
+      "a": "gradient_descent",
+      "c": "information_theoretic_lower_bound",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2511.12471"
+        ]
+      }
+    },
+    {
+      "rank": 11,
+      "a": "accuracy_degradation",
+      "c": "resource_constrained_environment",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.11987",
+          "2306.12929",
+          "2502.19008",
+          "2606.26650",
+          "2606.27759"
+        ]
+      }
+    },
+    {
+      "rank": 12,
+      "a": "channel_capacity",
+      "c": "privacy_utility_tradeoff",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 13,
+      "a": "classification",
+      "c": "random_projection",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2410.05786",
+          "2607.11938"
+        ],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 14,
+      "a": "image_reconstruction",
+      "c": "non_convex_optimization",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2511.12471"
+        ]
+      }
+    },
+    {
+      "rank": 15,
+      "a": "error_feedback",
+      "c": "variational_autoencoder",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 16,
+      "a": "generalization_bound",
+      "c": "quantization",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2504.15208",
+          "2607.14506"
+        ],
+        "bridge_citation": [
+          "2306.08125"
+        ]
+      }
+    },
+    {
+      "rank": 17,
+      "a": "channel_coding",
+      "c": "distributed_source_coding",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2401.13232"
+        ]
+      }
+    },
+    {
+      "rank": 18,
+      "a": "information_theoretic_lower_bound",
+      "c": "support_recovery",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 19,
+      "a": "robustness",
+      "c": "semi_supervised_learning",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 20,
+      "a": "dithered_quantization",
+      "c": "lasso",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    }
+  ],
+  "similarity": [
+    {
+      "rank": 1,
+      "a": "lossy_source_coding",
+      "c": "source_coding",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2305.13116",
+          "2401.17089",
+          "2410.09018",
+          "2501.06363",
+          "2604.19515"
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "a": "natural_language_understanding",
+      "c": "nlp_tasks",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2301.03416",
+          "2305.10010",
+          "2305.10013",
+          "2305.11627",
+          "2305.12074"
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "a": "machine_translation",
+      "c": "neural_machine_translation",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2305.11627",
+          "2305.12458",
+          "2305.14380",
+          "2305.14706",
+          "2305.14864"
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "a": "distributed_sgd",
+      "c": "sgd",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2312.08538",
+          "2312.17530",
+          "2407.04480",
+          "2410.15526",
+          "2504.19903"
+        ]
+      }
+    },
+    {
+      "rank": 5,
+      "a": "llm",
+      "c": "pretrained_language_model",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2309.14030",
+          "2406.14709",
+          "2509.07759",
+          "2510.09434",
+          "2603.11446"
+        ],
+        "bridge_citation": [
+          "2305.11627",
+          "2305.14152",
+          "2305.19268",
+          "2306.00014",
+          "2306.06625"
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "a": "wyner_ziv_coding",
+      "c": "wyner_ziv_problem",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2604.20369"
+        ]
+      }
+    },
+    {
+      "rank": 7,
+      "a": "nlp",
+      "c": "nlp_tasks",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2301.03416",
+          "2301.12017",
+          "2302.07863",
+          "2302.11812",
+          "2303.04185"
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "a": "deep_neural_network",
+      "c": "dnn",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2305.12201",
+          "2305.17295",
+          "2306.07629",
+          "2312.03038",
+          "2409.02404"
+        ]
+      }
+    },
+    {
+      "rank": 9,
+      "a": "distributed_sgd",
+      "c": "error_feedback",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.03240",
+          "2312.08538",
+          "2312.17530",
+          "2410.15526",
+          "2504.19903"
+        ]
+      }
+    },
+    {
+      "rank": 10,
+      "a": "inverse_problems",
+      "c": "linear_inverse_problem",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2407.08256",
+          "2511.12471"
+        ]
+      }
+    },
+    {
+      "rank": 11,
+      "a": "natural_language_understanding",
+      "c": "nlp",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2301.03416",
+          "2305.08285",
+          "2305.10010",
+          "2305.10013",
+          "2305.12074"
+        ]
+      }
+    },
+    {
+      "rank": 12,
+      "a": "error_compensation",
+      "c": "error_feedback",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.03240",
+          "2312.08538",
+          "2312.17530",
+          "2410.15526",
+          "2504.19903"
+        ]
+      }
+    },
+    {
+      "rank": 13,
+      "a": "computation_cost",
+      "c": "compute_cost",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2305.11627",
+          "2306.07629",
+          "2306.11987",
+          "2307.05972",
+          "2307.07982"
+        ]
+      }
+    },
+    {
+      "rank": 14,
+      "a": "edge_device",
+      "c": "mobile_device",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [
+          "2403.12844"
+        ],
+        "bridge_citation": [
+          "2306.05785",
+          "2312.03038",
+          "2402.03142",
+          "2405.10802",
+          "2410.14720"
+        ]
+      }
+    },
+    {
+      "rank": 15,
+      "a": "computation_cost",
+      "c": "computational_overhead",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2407.11681",
+          "2503.06823",
+          "2604.23475"
+        ]
+      }
+    },
+    {
+      "rank": 16,
+      "a": "reconstruction_accuracy",
+      "c": "reconstruction_performance",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 17,
+      "a": "plm",
+      "c": "pretrained_language_model",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2306.06625",
+          "2306.06629",
+          "2401.15347",
+          "2408.08144",
+          "2508.17250"
+        ]
+      }
+    },
+    {
+      "rank": 18,
+      "a": "measurement_complexity",
+      "c": "number_of_measurements",
+      "auto_hit": true,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": [
+          "2310.03758",
+          "2311.14886",
+          "2407.08256",
+          "2511.12471",
+          "2605.05435"
+        ]
+      }
+    },
+    {
+      "rank": 19,
+      "a": "convergence",
+      "c": "convergence_rate",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    },
+    {
+      "rank": 20,
+      "a": "signal_reconstruction",
+      "c": "sparse_signal_recovery",
+      "auto_hit": false,
+      "evidence": {
+        "comention": [],
+        "bridge_citation": []
+      }
+    }
+  ]
+}

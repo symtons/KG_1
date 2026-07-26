@@ -1,0 +1,24 @@
+papers extracted: 11588
+total entities: 164075  (avg 14.2/paper)
+total triples:  154520  (avg 13.3/paper)
+
+entities by type:
+   62524  Method
+   28914  Metric
+   22664  Phenomenon
+   17666  Task
+   17052  ModelFamily
+    9895  Resource
+    5360  Dataset
+
+triples by relation:
+   52935  APPLIES_TO
+   21864  IMPROVES
+   21283  COMBINES_WITH
+   12772  REDUCES
+   12708  MITIGATES
+    9773  EXTENDS
+    8580  CAUSES
+    7849  FAILS_AT
+    3441  DEGRADES
+    3315  APPROXIMATES
