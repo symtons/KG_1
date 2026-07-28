@@ -2,9 +2,13 @@ function label(id) {
   return id.replaceAll("_", " ");
 }
 
-export default function CandidateList({ candidates, selected, onSelect }) {
+export default function CandidateList({ candidates, selected, onSelect, isFiltered }) {
   if (candidates.length === 0) {
-    return <div className="empty-state">Loading candidates…</div>;
+    return (
+      <div className="empty-state">
+        {isFiltered ? "No candidates match this search." : "Loading candidates…"}
+      </div>
+    );
   }
 
   return (

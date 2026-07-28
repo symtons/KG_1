@@ -1,13 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "./App.css";
 import { api } from "./api";
 import CandidateList from "./components/CandidateList";
 import BridgeGraph from "./components/BridgeGraph";
 import VerificationCard from "./components/VerificationCard";
 import PrecisionChart from "./components/PrecisionChart";
+import SearchBar from "./components/SearchBar";
+import EntityCard from "./components/EntityCard";
 
 function label(id) {
   return id.replaceAll("_", " ");
+}
+
+// Spaces and underscores are treated as equivalent, so "kv cache" matches
+// the entity id "kv_cache".
+function normalize(s) {
+  return s.trim().toLowerCase().replace(/[\s_]+/g, "_");
 }
 
 export default function App() {
@@ -17,9 +25,15 @@ export default function App() {
   const [detail, setDetail] = useState(null);
   const [graph, setGraph] = useState(null);
 
+  const [query, setQuery] = useState("");
+  const [entity, setEntity] = useState(null);
+  const [entityStatus, setEntityStatus] = useState("idle"); // idle | notfound
+
   useEffect(() => {
     api.stats().then(setStats).catch(console.error);
-    api.candidates(200, 0).then((res) => setCandidates(res.results)).catch(console.error);
+    // fetch the full ranked set (candidates.jsonl caps at 1000) so the
+    // filter box has everything to search over, not just the first page
+    api.candidates(1000, 0).then((res) => setCandidates(res.results)).catch(console.error);
   }, []);
 
   useEffect(() => {
@@ -29,6 +43,41 @@ export default function App() {
     api.candidateDetail(selected.a, selected.c).then(setDetail).catch(console.error);
     api.bridgeGraph(selected.a, selected.c).then(setGraph).catch(console.error);
   }, [selected]);
+
+  const filteredCandidates = useMemo(() => {
+    const q = normalize(query);
+    if (!q) return candidates;
+    return candidates.filter((c) => c.a.includes(q) || c.c.includes(q));
+  }, [candidates, query]);
+
+  function handleQueryChange(value) {
+    setQuery(value);
+    // an in-progress edit invalidates whatever entity card is showing —
+    // only a fresh Enter press repopulates it
+    setEntity(null);
+    setEntityStatus("idle");
+  }
+
+  function handleSearchEnter() {
+    const q = normalize(query);
+    if (!q) return;
+    const knownEntity = candidates.some((c) => c.a === q || c.c === q);
+    if (!knownEntity) {
+      setEntity(null);
+      setEntityStatus("notfound");
+      return;
+    }
+    api
+      .entity(q)
+      .then((res) => {
+        setEntity(res);
+        setEntityStatus("idle");
+      })
+      .catch(() => {
+        setEntity(null);
+        setEntityStatus("notfound");
+      });
+  }
 
   return (
     <div className="app">
@@ -71,15 +120,37 @@ export default function App() {
 
       <div className="main">
         <div className="list-pane">
-          <CandidateList candidates={candidates} selected={selected} onSelect={setSelected} />
+          <SearchBar
+            value={query}
+            onChange={handleQueryChange}
+            onEnter={handleSearchEnter}
+            matchCount={filteredCandidates.length}
+            totalCount={candidates.length}
+          />
+          <CandidateList
+            candidates={filteredCandidates}
+            selected={selected}
+            onSelect={setSelected}
+            isFiltered={query.trim().length > 0}
+          />
         </div>
 
         <div className="detail-pane">
-          {!selected && stats && (
+          {entityStatus === "notfound" && (
+            <div className="empty-state">
+              No entity found matching &ldquo;{query}&rdquo; among the ranked candidates.
+            </div>
+          )}
+
+          {entity && (
+            <EntityCard entity={entity} selected={selected} onSelectCandidate={setSelected} />
+          )}
+
+          {!selected && !entity && entityStatus === "idle" && stats && (
             <>
               <div className="empty-state">
                 Select a candidate on the left to see its bridge structure and manual
-                verification.
+                verification, or search for a concept above.
               </div>
               <PrecisionChart precision={stats.precision} />
             </>

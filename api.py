@@ -53,6 +53,7 @@ def load_verification() -> dict:
 
 CANDIDATES = load_candidates()
 CANDIDATE_BY_PAIR = {(c["a"], c["c"]): c for c in CANDIDATES}
+RANK_BY_PAIR = {(c["a"], c["c"]): i + 1 for i, c in enumerate(CANDIDATES)}
 VERIFICATION = load_verification()
 
 # index verification rows by (method, a, c) for quick lookup
@@ -170,25 +171,45 @@ def bridge_graph(a: str, c: str):
 
 @app.get("/api/entity/{entity_id}")
 def entity_detail(entity_id: str):
+    """Explore view for the search feature: type, how well-established the
+    entity is pre-cutoff, its strongest relation-graph neighbors, and every
+    ranked candidate pair it shows up in. Read-only — MATCH/RETURN only,
+    consistent with the rest of this file."""
     with driver.session() as session:
         row = session.run(
-            "MATCH (e:Entity {canonical_name: $id}) RETURN e", id=entity_id
+            "MATCH (e:Entity {canonical_name: $id}) RETURN e.type AS type", id=entity_id
         ).single()
         if row is None:
             raise HTTPException(404, f"no entity {entity_id}")
-        entity = dict(row["e"])
 
-        degree = session.run(
-            "MATCH (e:Entity {canonical_name: $id})--() RETURN count(*) AS n", id=entity_id
-        ).single()["n"]
+        pre_cutoff_mentions = session.run("""
+            MATCH (p:Paper)-[:MENTIONS]->(:Entity {canonical_name: $id})
+            WHERE p.year <= 2022
+            RETURN count(p) AS n
+        """, id=entity_id).single()["n"]
 
-        papers = session.run("""
-            MATCH (p:Paper)-[:MENTIONS]->(e:Entity {canonical_name: $id})
-            RETURN p.id AS id, p.title AS title, p.year AS year, p.origin AS origin
-            ORDER BY p.year DESC LIMIT 10
+        neighbors = session.run("""
+            MATCH (e:Entity {canonical_name: $id})-[r]-(other:Entity)
+            RETURN other.canonical_name AS neighbor, other.type AS neighbor_type,
+                   type(r) AS relation, r.support AS shared_papers,
+                   CASE WHEN startNode(r) = e THEN 'out' ELSE 'in' END AS direction
+            ORDER BY shared_papers DESC
+            LIMIT 15
         """, id=entity_id).data()
 
-    return {**entity, "degree": degree, "example_papers": papers}
+    candidate_pairs = [
+        to_summary(RANK_BY_PAIR[(c["a"], c["c"])], c)
+        for c in CANDIDATES
+        if c["a"] == entity_id or c["c"] == entity_id
+    ]
+
+    return {
+        "canonical_name": entity_id,
+        "type": row["type"],
+        "pre_cutoff_mentions": pre_cutoff_mentions,
+        "neighbors": neighbors,
+        "candidates": candidate_pairs,
+    }
 
 
 @app.on_event("shutdown")
